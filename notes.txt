@@ -1,0 +1,37 @@
+It was difficult to set cookies becuase of many headers
+for cookies related purpose see this link https://javascript.plainenglish.io/how-to-send-cookies-from-express-to-a-front-end-application-in-production-9273a4f3ce72
+
+#since router unmounts components useEffect will run everytime
+
+axios response format
+{data: 'autheticated', status: 200, statusText: 'OK', headers: {…}, config: {…}, …}
+config: {transitional: {…}, transformRequest: Array(1), transformResponse: Array(1), timeout: 0, adapter: ƒ, …}
+data: "autheticated"
+headers: {content-length: '14', content-type: 'application/json; charset=utf-8'}
+request: XMLHttpRequest {onreadystatechange: null, readyState: 4, timeout: 0, withCredentials: true, upload: XMLHttpRequestUpload, …}
+status: 200
+statusText: "OK"
+[[Prototype]]: Object
+
+#to do
+#create order
+#user profile page where orders will be listed
+#filter products
+#single product page view
+
+What Redux does in a very general sense, is that it creates a global state for the whole application, that can be accessed by any of your component
+It is a state management library
+You have only one state for your whole app, and not states for each of your components
+
+The Redux Store
+The center of every Redux application is the store. A "store" is a container that holds your application's global state.
+
+A store is a JavaScript object with a few special functions and abilities that make it different than a plain global object:
+
+You must never directly modify or change the state that is kept inside the Redux store
+Instead, the only way to cause an update to the state is to create a plain action object that describes "something that happened in the application", and then dispatch the action to the store to tell it what happened.
+When an action is dispatched, the store runs the root reducer function, and lets it calculate the new state based on the old state and the action
+Finally, the store notifies subscribers that the state has been updated so the UI can be updated with the new data.
+
+#Reducers are functions that take the current state and an action as arguments, and return a new state result. In other words, (state, action) => newState.
+
